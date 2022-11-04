@@ -24,7 +24,7 @@
           <a class="logo"><span class="web">Web</span>Studio</a>
           <ul class="menu">
             <li class="navitem">
-              <a href="index.html" class="navmenu-link">Agencja</a>
+              <a href="index.html" class="navmenu-linkin">Agencja</a>
             </li>
             <li class="navitem">
               <a href="portfolio.html" class="navmenu-link">Portfolio</a>
@@ -63,7 +63,7 @@
         <div class="conteiner">
           <div class="backt">
             <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="buttonback">Zamów usługe</button>
+            <button type="button" class="buttonback" data-modal-open>Zamów usługe</button>
           </div>
         </div>
       </section>
@@ -162,6 +162,7 @@
                   width="370"
                   height="294"
                 />
+                <p class="pimg">Aplikacje komputerowe</p>
               </li>
               <li class="liimg">
                 <img
@@ -171,6 +172,7 @@
                   width="370"
                   height="294"
                 />
+                <p class="pimg">Aplikacje mobilne</p>
               </li>
               <li class="liimg">
                 <img
@@ -180,6 +182,7 @@
                   width="370"
                   height="294"
                 />
+                <p class="pimg">Rozwiązania graficzne</p>
               </li>
             </ul>
           </div>
@@ -513,5 +516,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
