@@ -1,4 +1,8 @@
 /*header*/
+:root {
+   --text-color: #757575;
+   --hover-color: #2196f3; 
+}
 li {
   list-style: none;
   padding: 0;
@@ -94,7 +98,7 @@ section {
   color: #212121;
 }
 .link {
-  color: #757575;
+  color: var(--text-color);
   margin-left: 10px;
 }
 .navmenu-link,
@@ -110,7 +114,7 @@ section {
 }
 .navmenu-linkin:hover,
 .navmenu-link:hover {
-  color: #2196f3;
+  color: var(--hover-color);
   cursor: pointer;
 }
 .navmenu-linkin::after {
@@ -123,9 +127,12 @@ section {
   bottom: -21px;
 }
 .header-list-item:hover, .link:hover {
-  fill:  #2196f3;
-  color: #2196f3;
+  fill:  var(--hover-color);
+  color: var(--hover-color);
   cursor: pointer;
+}
+.header-list-item:hover a {
+  color: var(--hover-color);
 }
 /*index*/
 .back {
@@ -295,7 +302,7 @@ section {
 }
 .back3-link:hover {
   fill: #fff;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
 }
 .title4 {
   font-weight: 700;
@@ -370,7 +377,7 @@ section {
 }
 .button:hover {
   color: #fff;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   cursor: pointer;
 }
 .tiles {
@@ -478,7 +485,7 @@ section {
   margin-right: 10px;
 }
 .a-social:hover {
-  background-color: #2196f3;
+  background-color: var(--hover-color);
 }
 .backdrop {
   position: fixed;
